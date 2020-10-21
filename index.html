@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!---- META-tags--------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es un menu de navegacion responsivo, el cual utiliza javascript (para esconder/mostrar los sub-menus y css (flex) para la responsividad" />
+    <meta name="keywords" content="Electro, Dormitorio, Mujer, Hombre, catalogo, menu, Responsivo, Javascript, css" />
+    <meta name="author" content="Francisco javier Gonzalez Grez" />
+    <!---- Links a FontAwesome + css ---->
+    <script src="https://kit.fontawesome.com/55b562cb70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!---- titulo------------------------->
+    <title>Menu de navegacion QUIZ </title>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#">Menu: </a></li>
+
+
+            <li class="item has-submenu">
+                <a tabindex="0">Electro</a>
+                <ul class="submenu">
+                    <li class="subtitem"><a href="#">Televisores</a></li>
+                    <li class="subtitem"><a href="#">Audio</a></li>
+                    <li class="subtitem"><a href="#">Marcas Destacadas</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">Dormitorio</a>
+                <ul class="submenu">
+                    <li class="subtitem"><a href="#">Ropa de cama</a></li>
+                    <li class="subtitem"><a href="#">Camas</a></li>
+                    <li class="subtitem"><a href="#">Mueble de Dormitorio</a></li>
+                    <li class="subtitem"><a href="#">Colchones</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">Mujer</a>
+                <ul class="submenu">
+                    <li class="subtitem"><a href="#">Ropa deportiva</a></li>
+                    <li class="subtitem"><a href="#">Accesorios</a></li>
+                    <li class="subtitem"><a href="#">Zapatos</a></li>
+                    <li class="subtitem"><a href="#">Ofertas</a></li>
+                </ul>
+            </li>
+
+            <li class="item has-submenu">
+                <a tabindex="0">Hombre</a>
+                <ul class="submenu">
+                    <li class="subtitem"><a href="#">Ropa deportiva</a></li>
+                    <li class="subtitem"><a href="#">Zapatos</a></li>
+                    <li class="subtitem"><a href="#">Ofertas</a></li>
+                    <li class="subtitem"><a href="#">Accesorios</a></li>
+                </ul>
+            </li>
+
+
+            <li class="toggle"> <a href="#"><i class="fas fa-bars"></i></a></li>
+
+
+
+        </ul>
+
+
+    </nav>
+
+    <div class="selectedoption">
+        <p>SELECCION:</p>
+        <p id="demo" onclick="Menu()">Haga click en algo para ver su categoria.</p>
+
+    </div>
+
+
+
+</body>
+<script type="text/javascript" src="javaScript.js"></script>
+
+</html>
