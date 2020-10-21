@@ -1,5 +1,6 @@
-var toggle = document.querySelector(".toggle");
-var menu = document.querySelector(".menu");
+const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".menu");
+
 
 function toggleMenu() {
     if (menu.classList.contains("active")) {
@@ -10,8 +11,11 @@ function toggleMenu() {
         toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
     }
 }
+
+
 toggle.addEventListener("click", toggleMenu, false);
-var items = document.querySelectorAll('.item');
+
+const items = document.querySelectorAll('.item');
 
 function toggleItem() {
     if (this.classList.contains("submenu-active")) {
@@ -23,16 +27,19 @@ function toggleItem() {
         this.classList.add("submenu-active");
     }
 }
-for (var _i = 0, items_1 = items; _i < items_1.length; _i++) {
-    var item = items_1[_i];
+
+for (let item of items) {
     if (item.querySelector('.submenu')) {
         item.addEventListener('click', toggleItem, false);
     }
 }
 
+
 function Menu() {
-    window.onclick = function(e) {
-        texto = e.target; // to get the element
-        document.getElementById("demo").innerHTML = e.target.tagName; // to get the element tag name alone
-    };
+    
+    window.onclick = e => {
+        document.getElementById("demo").innerHTML =  e.target.tagName;
+    } 
+   
+ 
 }
